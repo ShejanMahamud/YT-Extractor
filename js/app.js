@@ -5,6 +5,14 @@ const loadDetails = async () => {
     const data = await res.json();
 
     const thumbnails = data.items[0].snippet.thumbnails;
+    const videoId2 = data.items[0].id;
+    const channelId = data.items[0].snippet.channelId;
+    const videoTitle = data.items[0].snippet.title;
+    const videoDes = data.items[0].snippet.description;
+    document.getElementById("video-id").innerText = videoId2;
+    document.getElementById("channel-id").innerText = channelId;
+    document.getElementById("title").innerText = videoTitle;
+    document.getElementById("description").innerText = videoDes;
 
     const downloadThumbnail = (url) => {
         const link = document.createElement("a");
