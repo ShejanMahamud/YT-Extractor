@@ -9,6 +9,10 @@
       content="Get Thumbnails, Tags, Channel ID from a YouTube video"
     />
     <meta
+      name="google-site-verification"
+      content="KigIoJJvADWhkgbq8DrznK5d-IAXbrh732a_XS6fJcU"
+    />
+    <meta
       name="keywords"
       content="youtube, youtube thumbnails, youtube tags, youtube channel id"
     />
@@ -36,6 +40,20 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-W0B7724HKQ"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-W0B7724HKQ");
+    </script>
   </head>
   <!-- body started -->
   <body class="font-poppins w-full h-auto">
@@ -54,7 +72,9 @@
           class="bg-white text-red-600 font-bold px-6 py-3 rounded-xl lg:flex items-center gap-2 hidden"
         >
           <i class="fa-brands fa-github text-xl"></i>
-          <span class="text-xs">@ShejanMahamud</span>
+          <a href="https://github.com/ShejanMahamud"
+            ><span class="text-xs">@ShejanMahamud</span></a
+          >
         </button>
       </nav>
       <!-- menu ended -->
@@ -260,6 +280,11 @@
         </div>
       </section>
     </main>
+    <footer class="w-full bg-red-500 p-10">
+      <p class="text-white font-bold text-center">
+        All Rights Reserved To @ShejanMahamud
+      </p>
+    </footer>
     <!-- js file -->
     <script src="./js/app.js"></script>
   </body>
